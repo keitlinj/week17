@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #333333;
+    --primary-light: #e1e0e0;
+    --muted-grey: #7D6F6F;
+    --accent-yellow: #000000;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-light);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+   grid-template-rows: repeat(5, auto); 
+   width: 100%;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 2.6rem;
+    padding: 1rem 0;
+}
+
+.header-left h1 {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-left .author {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--muted-grey);
+    margin-bottom: 1rem;
+}
+
+.header-left .personal-info {
+    list-style: none;
+    padding-left: 0;
+}
+
+.header-left .personal-info li {
+    margin: 0.6rem 0;
+    font-size: 1.1rem;
+}
+
+.header-left .personal-info i {
+    color: var(--accent-yellow);
+    margin-right: 0.6rem;
+}
+
+.header-left .personal-info a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--link-fonts);
+}
+
+
+.main-title {
+    font-size: 1.8rem;
+    font-family: var(--heading-font);
+    margin: 2rem 0 1rem 0;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+.education ul,
+.workexperience ul,
+.skills ul {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.education li,
+.workexperience li,
+.skills li {
+    margin: 0,6rem 0;
+    font-size: 1.1rem;
+}
+
+.year {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.skills i {
+    color: var(--accent-yellow);
+    margin-right: 0.6rem;
+}
+
+
+
+
+footer {
+    width: 100%;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+
+
+
+.reviews {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.reviews .review-box {
+    width: 100%;
+    grid-column: 1/3;
+    margin: 2rem 0;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+}
+
+.reviews-stars {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.reviews-stars .rating-stars {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.reviews-stars .rating-stars li {
+    font-size: 3rem;
+    color: var(--muted-greyw);
+}
+
+.reviews-btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-items: center;
+    justify-items: center;
+}
+
+.reviews-btn-container button {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-color: var(--muted-grey);
+    color: var(--primary-light);
+    font-size: 1.6rem;
+    font-family: var(--link-fonts);
+}
+
+body {
+    padding-bottom: 200px;
+}
