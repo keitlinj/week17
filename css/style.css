@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-color: #333333;
+    --primary-color: rgb(0, 0, 0);
     --primary-light: #e1e0e0;
     --muted-grey: #7D6F6F;
     --accent-yellow: #000000;
@@ -50,19 +50,13 @@ header h1 {
 }
 
 
-/*h1 {
-    font-family: var(--heading-font);
-    font-weight: 900;
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-}*/
-
-.author {
-    font-size: 1.4rem;
+.personal-info .fullname {
     font-weight: bold;
-    margin-bottom: 1rem;
-}
+    font-size: 1.4rem;   
+    margin-bottom: 0.9rem; 
+    margin-top: 1rem;   
 
+}
 .personal-info {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -70,13 +64,13 @@ header h1 {
     padding-left: 0;
 }
 .personal-info li {
-    margin: 0.8rem 0;
+    margin: 2rem 0;
     font-size: 1.1rem;
 }
 
 .personal-info i {
     color: var(--accent-yellow);
-    margin-right: 0.6rem;
+    margin-right: 0.9rem;
 }
 
 .personal-info a {
@@ -111,8 +105,6 @@ header h1 {
     transition: opacity 0.2s ease-in-out;
     
 }
-
-
 
 
 .education ul,
